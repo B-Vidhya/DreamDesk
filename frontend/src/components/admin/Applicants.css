@@ -1,0 +1,35 @@
+/* Applicants.css */
+.applicants-container {
+    background-color: #0c2c76;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.applicants-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.applicants-table {
+    width: 100%;
+    background-color: white;
+    color: #0c2c76;
+    border-collapse: collapse;
+}
+
+.applicants-table th, .applicants-table td {
+    padding: 12px;
+    border: 1px solid #0e4f69;
+    text-align: left;
+}
+
+.applicants-table th {
+    background-color: #0e4f69;
+    color: white;
+}
+
+.applicants-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

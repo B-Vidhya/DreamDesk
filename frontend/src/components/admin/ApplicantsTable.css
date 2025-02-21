@@ -1,0 +1,56 @@
+/* ApplicantsTable.css */
+
+.table-container {
+    background-color: #0c2c76;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0e4f69;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff3b;
+    color: white;
+}
+
+tr:hover {
+    background-color: #0e4f6980;
+}
+
+a {
+    color: #4db8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.popover-content {
+    background-color: #0e4f69;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.popover-content div {
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.popover-content div:hover {
+    background-color: #0c2c76;
+}

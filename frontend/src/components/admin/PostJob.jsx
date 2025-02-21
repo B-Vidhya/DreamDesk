@@ -10,6 +10,7 @@ import { JOB_API_END_POINT } from '@/utils/constant'
 import { toast } from 'sonner'
 import { useNavigate } from 'react-router-dom'
 import { Loader2 } from 'lucide-react'
+import './PostJob.css';
 
 const companyArray = [];
 

@@ -1,0 +1,28 @@
+.company-create-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.company-create-header {
+    margin-bottom: 1.5rem;
+}
+
+.company-create-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-create-header p {
+    color: gray;
+}
+
+.company-input {
+    margin: 0.5rem 0;
+}
+
+.company-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}

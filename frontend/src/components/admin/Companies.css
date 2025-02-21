@@ -1,0 +1,118 @@
+/* Companies.css */
+/* .companies-container {
+    background-color: #0c2c76;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.companies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.companies-input {
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #0e4f69;
+    border-radius: 5px;
+    background-color: #0e4f69;
+    color: white;
+}
+
+.companies-button {
+    background-color: #0e4f69;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.companies-button:hover {
+    background-color: #0c2c76;
+}
+
+
+ */
+
+
+ /* Ensure the container is properly styled */
+.companies-container {
+    background-color: #02143f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Header section */
+.companies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.companies-input {
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid #0e4f69;
+    border-radius: 5px;
+    background-color: #0e4f69;
+    color: white;
+}
+
+/* Buttons */
+.companies-button {
+    background-color: #0e4f69;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.companies-button:hover {
+    background-color: #0c2c76;
+}
+
+/* Table Styling */
+.companies-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; /* Set a visible background */
+}
+
+/* Ensure table headers are properly styled */
+.companies-table th {
+    background-color: #0e4f69;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Ensure table rows and data are visible */
+.companies-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: black; /* Ensure text is black so it's visible */
+}
+
+/* Alternate row coloring for better readability */
+.companies-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.companies-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Ensure hover effect doesn't interfere with visibility */
+.companies-table tr:hover {
+    background-color: #ddd;
+}

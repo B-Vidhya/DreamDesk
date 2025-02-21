@@ -1,0 +1,13 @@
+.category-button {
+    background-color: #0e2349; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #12224f; 
+  }
