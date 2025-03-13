@@ -1,4 +1,3 @@
-/* AdminJobsTable.css */
 .admin-jobs-table {
     width: 100%;
     background-color: white;
@@ -6,7 +5,8 @@
     border-collapse: collapse;
 }
 
-.admin-jobs-table th, .admin-jobs-table td {
+.admin-jobs-table th,
+.admin-jobs-table td {
     padding: 12px;
     border: 1px solid #0e4f69;
     text-align: left;
@@ -14,7 +14,7 @@
 
 .admin-jobs-table th {
     background-color: #0e4f69;
-    color: white;
+    color: rgb(241, 233, 233);
 }
 
 .admin-jobs-table tr:nth-child(even) {
