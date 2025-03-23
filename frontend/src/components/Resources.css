@@ -1,0 +1,16 @@
+.resources-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.resource-section {
+    transition: transform 0.2s ease-in-out;
+}
+
+.resource-section:hover {
+    transform: scale(1.02);
+}
+
+.text-blue-600:hover {
+    text-decoration: underline;
+}

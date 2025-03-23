@@ -47,9 +47,9 @@ const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user?.role === 'recruiter') {
-      navigate("/admin/companies");
+        navigate("/RecruterHome", { replace: true });  // Force navigation
     }
-  }, [user, navigate]);
+}, [user, navigate]);
 
   return (
     <div className="home-container">

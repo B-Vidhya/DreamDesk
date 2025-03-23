@@ -3,9 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/auth/Login'
 import Signup from './components/auth/Signup'
 import Home from './components/Home'
+import RecruterHome from './components/admin/RecruterHome';
 import Jobs from './components/Jobs'
 import Browse from './components/Browse'
 import Profile from './components/Profile'
+import Resources from './components/Resources';
 import JobDescription from './components/JobDescription'
 import Companies from './components/admin/Companies'
 import CompanyCreate from './components/admin/CompanyCreate'
@@ -45,7 +47,16 @@ const appRouter = createBrowserRouter([
     path: "/profile",
     element: <Profile />
   },
-  // admin ke liye yha se start hoga
+  {
+    path: "/resources",  
+    element: <Resources />
+  },
+
+
+  {
+    path: "/RecruterHome",
+    element: <RecruterHome />
+  },
   {
     path: "/admin/companies",
     element: <ProtectedRoute><Companies /></ProtectedRoute>
