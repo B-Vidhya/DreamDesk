@@ -1,3 +1,181 @@
+import { useEffect, useState } from 'react';
+import Navbar from '../shared/Navbar';
+import { Input } from '../ui/input';
+import { Button } from '../ui/button';
+import { Label } from '../ui/label';
+import { RadioGroup } from '../ui/radio-group';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { USER_API_END_POINT } from '@/utils/constant';
+import { toast } from 'sonner';
+import { useDispatch, useSelector } from 'react-redux';
+import { setLoading } from '@/redux/authSlice';
+import { Loader2 } from 'lucide-react';
+
+const Signup = () => {
+    const [input, setInput] = useState({
+        fullname: '',
+        email: '',
+        phoneNumber: '',
+        password: '',
+        confirmPassword: '',
+        role: '',
+    });
+    const { loading, user } = useSelector(store => store.auth);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const passwordValidation = (password) => {
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/;
+        return regex.test(password);
+    };
+
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        if (!passwordValidation(input.password)) {
+            toast.error('Password must be at least 8 characters long, with an uppercase, lowercase, and a special character.');
+            return;
+        }
+        if (input.password !== input.confirmPassword) {
+            toast.error('Passwords do not match!');
+            return;
+        }
+
+        try {
+            dispatch(setLoading(true));
+            const res = await axios.post(`${USER_API_END_POINT}/register`, input, {
+                headers: { 'Content-Type': 'application/json' },
+                withCredentials: true,
+            });
+            if (res.data.success) {
+                navigate('/login');
+                toast.success(res.data.message);
+            }
+        } catch (error) {
+            toast.error(error.response?.data?.message || 'Signup failed!');
+        } finally {
+            dispatch(setLoading(false));
+        }
+    };
+
+    useEffect(() => {
+        if (user) navigate('/');
+    }, [user, navigate]);
+
+    const changeEventHandler = (e) => {
+        setInput({ ...input, [e.target.name]: e.target.value });
+    };
+
+    return (
+        <div>
+            <Navbar />
+            <div className='flex items-center justify-center max-w-7xl mx-auto'>
+                <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
+                    <h1 className='font-bold text-xl mb-5'>Sign Up</h1>
+
+                    <div className='my-2'>
+                        <Label>Full Name</Label>
+                        <Input
+                            type='text'
+                            name='fullname'
+                            value={input.fullname}
+                            onChange={changeEventHandler}
+                            placeholder='Full Name'
+                            required
+                        />
+                    </div>
+
+                    <div className='my-2'>
+                        <Label>Email</Label>
+                        <Input
+                            type='email'
+                            name='email'
+                            value={input.email}
+                            onChange={changeEventHandler}
+                            placeholder='Email'
+                            required
+                        />
+                    </div>
+
+                    <div className='my-2'>
+                        <Label>Phone Number</Label>
+                        <Input
+                            type='text'
+                            name='phoneNumber'
+                            value={input.phoneNumber}
+                            onChange={changeEventHandler}
+                            placeholder='Phone Number'
+                            required
+                        />
+                    </div>
+
+                    <div className='my-2'>
+                        <Label>Password</Label>
+                        <Input
+                            type='password'
+                            name='password'
+                            value={input.password}
+                            onChange={changeEventHandler}
+                            placeholder='Password'
+                            required
+                        />
+                    </div>
+
+                    <div className='my-2'>
+                        <Label>Confirm Password</Label>
+                        <Input
+                            type='password'
+                            name='confirmPassword'
+                            value={input.confirmPassword}
+                            onChange={changeEventHandler}
+                            placeholder='Confirm Password'
+                            required
+                        />
+                    </div>
+
+                    <RadioGroup className='flex items-center gap-4 my-5'>
+                        <div className='flex items-center space-x-2'>
+                            <Input
+                                type='radio'
+                                name='role'
+                                value='student'
+                                checked={input.role === 'student'}
+                                onChange={changeEventHandler}
+                                className='cursor-pointer'
+                            />
+                            <Label>Student</Label>
+                        </div>
+                        <div className='flex items-center space-x-2'>
+                            <Input
+                                type='radio'
+                                name='role'
+                                value='recruiter'
+                                checked={input.role === 'recruiter'}
+                                onChange={changeEventHandler}
+                                className='cursor-pointer'
+                            />
+                            <Label>Recruiter</Label>
+                        </div>
+                    </RadioGroup>
+
+                    {loading ? (
+                        <Button className='w-full my-4'>
+                            <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait
+                        </Button>
+                    ) : (
+                        <Button type='submit' className='w-full my-4'>
+                            Signup
+                        </Button>
+                    )}
+                </form>
+            </div>
+        </div>
+    );
+};
+
+export default Signup;
+/*
+
 import { useEffect, useState } from 'react'
 import Navbar from '../shared/Navbar'
 import { Label } from '../ui/label'
@@ -158,4 +336,5 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default Signup;
+*/

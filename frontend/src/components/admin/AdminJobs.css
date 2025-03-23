@@ -1,36 +1,37 @@
 /* AdminJobs.css */
 .admin-jobs-container {
-    background-color: #0c2c76;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
+  background-color: #0c2c76;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .admin-jobs-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .admin-jobs-input {
-    width: fit-content;
-    padding: 10px;
-    border: 2px solid #0e4f69;
-    border-radius: 5px;
-    background-color: #0e4f69;
-    color: white;
+  width: fit-content;
+  padding: 10px;
+  border: 2px solid #0e4f69;
+  border-radius: 5px;
+  background-color: #0e4f69;
+  color: white;
 }
 
 .admin-jobs-button {
-    background-color: #0e4f69;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #0e4f69;
+  color: rgb(151, 26, 26);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .admin-jobs-button:hover {
-    background-color: #0c2c76;
+  background-color: #0c2c76;
+  color: black;
 }

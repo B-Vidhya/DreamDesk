@@ -9,7 +9,9 @@ const resourcesData = [
     links: [
       { name: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
       { name: "FreeCodeCamp", url: "https://www.freecodecamp.org/" },
-      { name: "Frontend Masters", url: "https://frontendmasters.com/" }
+      { name: "Frontend Masters", url: "https://frontendmasters.com/" },
+      { name: "CSS Tricks", url: "https://css-tricks.com/" },
+      { name: "React Docs", url: "https://react.dev/" }
     ]
   },
   {
@@ -18,7 +20,9 @@ const resourcesData = [
     links: [
       { name: "Node.js Docs", url: "https://nodejs.org/en/docs/" },
       { name: "The Odin Project", url: "https://www.theodinproject.com/" },
-      { name: "Codecademy - JavaScript", url: "https://www.codecademy.com/catalog/language/javascript" }
+      { name: "Codecademy - Backend", url: "https://www.codecademy.com/catalog/subject/backend-engineering" },
+      { name: "Express.js Docs", url: "https://expressjs.com/" },
+      { name: "SQL for Developers", url: "https://sqlzoo.net/" }
     ]
   },
   {
@@ -27,16 +31,42 @@ const resourcesData = [
     links: [
       { name: "Full Stack Open", url: "https://fullstackopen.com/en/" },
       { name: "Udemy - Web Dev Bootcamp", url: "https://www.udemy.com/course/the-complete-web-development-bootcamp/" },
-      { name: "Pluralsight", url: "https://www.pluralsight.com/paths/full-stack-web-development" }
+      { name: "Pluralsight", url: "https://www.pluralsight.com/paths/full-stack-web-development" },
+      { name: "CS50 by Harvard", url: "https://cs50.harvard.edu/" },
+      { name: "The Modern JavaScript Tutorial", url: "https://javascript.info/" }
     ]
   },
   {
-    title: "UX/UI Design",
-    description: "Enhance user experience with great design principles.",
+    title: "Data Analysis",
+    description: "Learn data analysis using Python, SQL, and visualization tools.",
     links: [
-      { name: "Interaction Design Foundation", url: "https://www.interaction-design.org/" },
-      { name: "UX Design Blog", url: "https://uxdesign.cc/" },
-      { name: "Coursera UI/UX", url: "https://www.coursera.org/specializations/ui-ux-design" }
+      { name: "Kaggle Learn", url: "https://www.kaggle.com/learn" },
+      { name: "DataCamp", url: "https://www.datacamp.com/" },
+      { name: "Google Data Analytics Certificate", url: "https://www.coursera.org/professional-certificates/google-data-analytics" },
+      { name: "Pandas Documentation", url: "https://pandas.pydata.org/docs/" },
+      { name: "SQL for Data Analysis", url: "https://mode.com/sql-tutorial/" }
+    ]
+  },
+  {
+    title: "Software Testing",
+    description: "Master QA, Automation, and Manual Testing techniques.",
+    links: [
+      { name: "Software Testing Help", url: "https://www.softwaretestinghelp.com/" },
+      { name: "Guru99 Testing", url: "https://www.guru99.com/software-testing.html" },
+      { name: "Test Automation University", url: "https://testautomationu.applitools.com/" },
+      { name: "Selenium Docs", url: "https://www.selenium.dev/documentation/en/" },
+      { name: "JUnit Guide", url: "https://junit.org/junit5/docs/current/user-guide/" }
+    ]
+  },
+  {
+    title: "Software Development",
+    description: "Learn best practices in coding, architecture, and system design.",
+    links: [
+      { name: "Clean Code by Robert C. Martin", url: "https://www.goodreads.com/book/show/3735293-clean-code" },
+      { name: "Design Patterns - Refactoring Guru", url: "https://refactoring.guru/design-patterns" },
+      { name: "System Design Primer", url: "https://github.com/donnemartin/system-design-primer" },
+      { name: "MIT OpenCourseWare - Software Engineering", url: "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-005-elements-of-software-construction-fall-2011/" },
+      { name: "Roadmap for Developers", url: "https://roadmap.sh/" }
     ]
   }
 ];
