@@ -1,37 +1,37 @@
 .admin-jobs-table {
-    width: 100%;
-    background-color: white;
-    color: #0c2c76;
-    border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  color: #0c2c76;
+  border-collapse: collapse;
 }
 
 .admin-jobs-table th,
 .admin-jobs-table td {
-    padding: 12px;
-    border: 1px solid #0e4f69;
-    text-align: left;
+  padding: 12px;
+  border: 1px solid #0e4f69;
+  text-align: left;
 }
 
 .admin-jobs-table th {
-    background-color: #0e4f69;
-    color: rgb(241, 233, 233);
+  background-color: #0e4f69;
+  color: rgb(17, 16, 16);
 }
 
-.admin-jobs-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+.admin-jobs-table tr {
+  background-color: #0d0d0d;
 }
 
 .admin-jobs-action {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .admin-jobs-action div {
-    cursor: pointer;
-    color: #0c2c76;
+  cursor: pointer;
+  color: #0c2c76;
 }
 
 .admin-jobs-action div:hover {
-    color: #0e4f69;
+  color: #0e4f69;
 }
