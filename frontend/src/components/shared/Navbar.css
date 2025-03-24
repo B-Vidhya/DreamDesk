@@ -18,7 +18,7 @@
     background-color: #003366;
     border-radius: 5px;
   } */
-
+/*
 .navbar {
   background-color: #dfe3e8;
   color: #fff;
@@ -55,7 +55,7 @@
   text-decoration: underline;
 }
 
-/* Ensure the name appears like other navbar links */
+/* Ensure the name appears like other navbar links 
 .cursor-pointer {
   color: white;
   text-decoration: none;
@@ -65,7 +65,7 @@
   text-decoration: underline;
 }
 
-/* Popover styling remains simple */
+/* Popover styling remains simple 
 .popover-content {
   background: white;
   border-radius: 8px;
@@ -74,18 +74,23 @@
   width: 200px;
 }
 
+
+.popover-content div:hover {
+  background-color: white;
+}
+
 .gradient-text {
   background: linear-gradient(
     to right,
     #0047ab,
     #00ffa6
-  ); /* Blue to Aqua Green */
+  ); /* Blue to Aqua Green 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Poppins", sans-serif; /* Stylish font */
+  font-family: "Poppins", sans-serif; /* Stylish font 
 }
 
-/* Profile Button */
+/* Profile Button 
 .profile-button {
   display: flex;
   align-items: center;
@@ -104,7 +109,7 @@
   background-color: #5b30a6;
 }
 
-/* Avatar container */
+/* Avatar container 
 .profile-avatar {
   display: flex;
   align-items: center;
@@ -121,7 +126,7 @@
   width: 250px;
 }
 
-/* Logout Button */
+/* Logout Button 
 .logout-button {
   display: flex;
   align-items: center;
@@ -137,4 +142,8 @@
 
 .logout-button:hover {
   background-color: #c5303b;
+}
+*/
+.popover-content div:hover {
+  background-color: white;
 }

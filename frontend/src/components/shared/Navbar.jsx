@@ -1,5 +1,5 @@
-
-import React from 'react'
+import React from "react";
+import "./Navbar.css";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Button } from "../ui/button";
 import { Avatar, AvatarImage } from "../ui/avatar";
@@ -40,22 +40,34 @@ const Navbar = () => {
 
         <div className="flex items-center gap-12">
           <ul className="flex font-medium items-center gap-5">
-                        {
-                            user && user.role === 'recruiter' ? (
-                                <>
-                                   <li><Link to="/RecruterHome">Home</Link></li>
-                                    <li><Link to="/admin/companies">Companies</Link></li>
-                                    <li><Link to="/admin/jobs">Jobs</Link></li>
-                                </>
-                            ) : (
-                                <>
-                                     <li><Link to="/">Home</Link></li>
-                                     <li><Link to="/resources">Resources</Link></li>
-                                    <li><Link to="/jobs">Jobs</Link></li>
-                                    <li><Link to="/browse">Browse</Link></li>
-                                </>
-                            )
-                        }
+            {user && user.role === "recruiter" ? (
+              <>
+                <li>
+                  <Link to="/RecruterHome">Home</Link>
+                </li>
+                <li>
+                  <Link to="/admin/companies">Companies</Link>
+                </li>
+                <li>
+                  <Link to="/admin/jobs">Jobs</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/resources">Resources</Link>
+                </li>
+                <li>
+                  <Link to="/jobs">Jobs</Link>
+                </li>
+                <li>
+                  <Link to="/browse">Browse</Link>
+                </li>
+              </>
+            )}
           </ul>
           {!user ? (
             <div className="flex items-center gap-2">
@@ -82,7 +94,7 @@ const Navbar = () => {
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="popover-content">
-                <div className="">
+                <div className="custom-1">
                   <div className="flex gap-2 space-y-2">
                     <Avatar className="profile-avatar">
                       <AvatarImage
