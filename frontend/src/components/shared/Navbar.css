@@ -145,5 +145,5 @@
 }
 */
 .popover-content div:hover {
-  background-color: white;
+  background-color: white !important;
 }
