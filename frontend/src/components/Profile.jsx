@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Navbar from './shared/Navbar'
 import { Avatar, AvatarImage } from './ui/avatar'
 import { Button } from './ui/button'
@@ -16,7 +16,7 @@ const isResume = true;
 const Profile = () => {
     useGetAppliedJobs();
     const [open, setOpen] = useState(false);
-    const {user} = useSelector(store=>store.auth);
+    const { user } = useSelector(store => store.auth);
 
     return (
         <div>
@@ -59,12 +59,15 @@ const Profile = () => {
                     }
                 </div>
             </div>
-            <div className='max-w-4xl mx-auto bg-white rounded-2xl'>
-                <h1 className='font-bold text-lg my-5'>Applied Jobs</h1>
-                {/* Applied Job Table   */}
+            <div className='max-w-4xl mx-auto bg-black rounded-2xl p-5'>
+                <h1 className='font-bold text-lg my-5 text-white text-center'>Applied Jobs</h1>
+                {/* Applied Job Table */}
                 <AppliedJobTable />
             </div>
-            <UpdateProfileDialog open={open} setOpen={setOpen}/>
+
+
+
+            <UpdateProfileDialog open={open} setOpen={setOpen} />
         </div>
     )
 }
