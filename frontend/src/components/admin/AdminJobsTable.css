@@ -1,37 +1,88 @@
-.admin-jobs-table {
+/* Aqua Green Theme */
+
+body {
+  background-color: #e0f7fa;
+  color: #004d40;
+  font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+.table {
   width: 100%;
-  background-color: white;
-  color: #0c2c76;
   border-collapse: collapse;
+  background-color: #b2dfdb;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.admin-jobs-table th,
-.admin-jobs-table td {
+.table th, .table td {
   padding: 12px;
-  border: 1px solid #0e4f69;
   text-align: left;
+  border-bottom: 1px solid #00796b;
+  color: #004d40 !important;
 }
 
-.admin-jobs-table th {
-  background-color: #0e4f69;
-  color: rgb(17, 16, 16);
+.table th {
+  background-color: #00796b;
+  color: white !important;
 }
 
-.admin-jobs-table tr {
-  background-color: #0d0d0d;
+.table td {
+  background-color: #e0f2f1 !important;
+  color: #004d40 !important;
 }
 
-.admin-jobs-action {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+.table tr {
+  background-color: #e0f2f1 !important;
+  color: #004d40 !important;
 }
 
-.admin-jobs-action div {
+.table tr:hover {
+  background-color: #80cbc4 !important;
+  color: #004d40 !important;
+}
+
+/* Popover Styling */
+.popover-content {
+  background-color: #b2dfdb;
+  border: 1px solid #00796b;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.popover-content div {
+  padding: 5px;
   cursor: pointer;
-  color: #0c2c76;
+  color: #004d40 !important;
 }
 
-.admin-jobs-action div:hover {
-  color: #0e4f69;
+.popover-content div:hover {
+  background-color: #80cbc4 !important;
+}
+
+/* Action Icons */
+.cursor-pointer svg {
+  color: #004d40 !important;
+}
+
+.cursor-pointer:hover svg {
+  color: #00796b !important;
+}
+
+/* Ensure table rows are always visible */
+.table tr {
+  background-color: #e0f2f1 !important;
+  color: #004d40 !important;
+}
+
+/* Ensure table cells are also always visible */
+.table td {
+  background-color: #e0f2f1 !important;
+  color: #004d40 !important;
+}
+
+/* Hover effect */
+.table tr:hover {
+  background-color: #80cbc4 !important;
+  color: #004d40 !important;
 }
