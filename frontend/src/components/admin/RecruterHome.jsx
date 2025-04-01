@@ -21,7 +21,6 @@ const RecruterHome = () => {
           <li>Click on the <strong>"Create Company"</strong> button.</li>
           <li>Fill in the necessary details such as Company Name, Industry, Location, and Description.</li>
           <li>Upload your company logo and relevant documents.</li>
-          <li>Submit the form and wait for verification approval.</li>
         </ol>
       </div>
 
@@ -32,7 +31,7 @@ const RecruterHome = () => {
           <li>Go to the <strong>Jobs</strong> section from the navbar.</li>
           <li>Click on the <strong>"Post a Job"</strong> button.</li>
           <li>Enter job details including Title, Description, Requirements, Salary, and Location.</li>
-          <li>Choose an application deadline and job type (Full-time, Part-time, Remote, etc.).</li>
+          <li>Choose the job type (Full-time, Part-time, Remote, etc.).</li>
           <li>Click <strong>Submit</strong> to publish the job listing.</li>
         </ol>
       </div>
